@@ -11,14 +11,14 @@
         <link rel="canonical" href="https://cdk8s.io/docs/latest/reference/cdk8s-plus-30/typescript/">
       
       
-        <link rel="prev" href="../../cdk8s-plus-29/go/">
+        <link rel="prev" href="../../cdk8s/go/">
       
       
         <link rel="next" href="../python/">
       
       
       <link rel="icon" href="../../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -50,7 +50,7 @@
     
       <link rel="stylesheet" href="../../../assets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -97,7 +97,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -121,32 +121,34 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -157,13 +159,14 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
         <a href="https://github.com/cdk8s-team/cdk8s" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     cdk8s-team/cdk8s
@@ -208,7 +211,7 @@
       <a href="https://github.com/cdk8s-team/cdk8s" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     cdk8s-team/cdk8s
@@ -228,8 +231,10 @@
       <a href="../../.." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     What is cdk8s?
+    
   </span>
   
 
@@ -262,6 +267,7 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
@@ -269,13 +275,14 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../../../get-started/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
     Getting started
+    
   </span>
   
 
@@ -307,8 +314,10 @@
       <a href="../../../get-started/python/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Python
+    
   </span>
   
 
@@ -328,8 +337,10 @@
       <a href="../../../get-started/typescript/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     TypeScript
+    
   </span>
   
 
@@ -349,8 +360,10 @@
       <a href="../../../get-started/java/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Java
+    
   </span>
   
 
@@ -370,8 +383,10 @@
       <a href="../../../get-started/go/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Go
+    
   </span>
   
 
@@ -422,6 +437,7 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
@@ -429,13 +445,14 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../../../basics/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
     Basics
+    
   </span>
   
 
@@ -467,8 +484,10 @@
       <a href="../../../basics/constructs/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Constructs
+    
   </span>
   
 
@@ -488,8 +507,10 @@
       <a href="../../../basics/chart/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Chart
+    
   </span>
   
 
@@ -509,8 +530,10 @@
       <a href="../../../basics/api-object/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     ApiObject
+    
   </span>
   
 
@@ -530,8 +553,10 @@
       <a href="../../../basics/deps/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Dependencies
+    
   </span>
   
 
@@ -551,8 +576,10 @@
       <a href="../../../basics/app/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     App
+    
   </span>
   
 
@@ -572,8 +599,10 @@
       <a href="../../../basics/escape-hatches/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Escape Hatches
+    
   </span>
   
 
@@ -593,8 +622,10 @@
       <a href="../../../basics/helm/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Helm Support
+    
   </span>
   
 
@@ -614,8 +645,10 @@
       <a href="../../../basics/include/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Include
+    
   </span>
   
 
@@ -635,8 +668,10 @@
       <a href="../../../basics/testing/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Testing
+    
   </span>
   
 
@@ -675,6 +710,7 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
@@ -682,13 +718,14 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../../../plus/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
     cdk8s+
+    
   </span>
   
 
@@ -756,6 +793,7 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
@@ -766,8 +804,10 @@
           <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
-    cdk8s-plus-28
+    cdk8s-plus-30
+    
   </span>
   
 
@@ -776,878 +816,6 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_2">
-            <span class="md-nav__icon md-icon"></span>
-            cdk8s-plus-28
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-28/config-map/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ConfigMap
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-28/container/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Container
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-28/cronjob/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    CronJob
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-28/deployment/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Deployment
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-28/horizontal-pod-autoscaler/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HorizontalPodAutoscaler
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-28/ingress/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Ingress
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-28/job/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Job
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-28/namespace/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Namespace
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-28/network-policy/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Network Policy
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-28/pod/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Pod
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-28/pv/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PersistentVolume
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-28/pvc/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PersistentVolumeClaim
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-28/rbac/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Role Based Access Control
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-28/secret/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Secret
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-28/service-account/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ServiceAccount
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-28/service/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Service
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-28/volume/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Volume
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    cdk8s-plus-29
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_3">
-            <span class="md-nav__icon md-icon"></span>
-            cdk8s-plus-29
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-29/config-map/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ConfigMap
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-29/container/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Container
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-29/cronjob/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    CronJob
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-29/deployment/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Deployment
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-29/horizontal-pod-autoscaler/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HorizontalPodAutoscaler
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-29/ingress/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Ingress
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-29/job/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Job
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-29/namespace/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Namespace
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-29/network-policy/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Network Policy
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-29/pod/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Pod
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-29/pv/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PersistentVolume
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-29/pvc/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PersistentVolumeClaim
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-29/rbac/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Role Based Access Control
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-29/secret/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Secret
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-29/service-account/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ServiceAccount
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-29/service/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Service
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../plus/cdk8s-plus-29/volume/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Volume
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    cdk8s-plus-30
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_4">
             <span class="md-nav__icon md-icon"></span>
             cdk8s-plus-30
           </label>
@@ -1663,8 +831,10 @@
       <a href="../../../plus/cdk8s-plus-30/config-map/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     ConfigMap
+    
   </span>
   
 
@@ -1684,8 +854,10 @@
       <a href="../../../plus/cdk8s-plus-30/container/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Container
+    
   </span>
   
 
@@ -1705,8 +877,10 @@
       <a href="../../../plus/cdk8s-plus-30/cronjob/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     CronJob
+    
   </span>
   
 
@@ -1726,8 +900,10 @@
       <a href="../../../plus/cdk8s-plus-30/deployment/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Deployment
+    
   </span>
   
 
@@ -1747,8 +923,10 @@
       <a href="../../../plus/cdk8s-plus-30/horizontal-pod-autoscaler/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     HorizontalPodAutoscaler
+    
   </span>
   
 
@@ -1768,8 +946,10 @@
       <a href="../../../plus/cdk8s-plus-30/ingress/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Ingress
+    
   </span>
   
 
@@ -1789,8 +969,10 @@
       <a href="../../../plus/cdk8s-plus-30/job/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Job
+    
   </span>
   
 
@@ -1810,8 +992,10 @@
       <a href="../../../plus/cdk8s-plus-30/namespace/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Namespace
+    
   </span>
   
 
@@ -1831,8 +1015,10 @@
       <a href="../../../plus/cdk8s-plus-30/network-policy/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Network Policy
+    
   </span>
   
 
@@ -1852,8 +1038,10 @@
       <a href="../../../plus/cdk8s-plus-30/pod/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Pod
+    
   </span>
   
 
@@ -1873,8 +1061,10 @@
       <a href="../../../plus/cdk8s-plus-30/pv/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     PersistentVolume
+    
   </span>
   
 
@@ -1894,8 +1084,10 @@
       <a href="../../../plus/cdk8s-plus-30/pvc/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     PersistentVolumeClaim
+    
   </span>
   
 
@@ -1915,8 +1107,10 @@
       <a href="../../../plus/cdk8s-plus-30/rbac/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Role Based Access Control
+    
   </span>
   
 
@@ -1936,8 +1130,10 @@
       <a href="../../../plus/cdk8s-plus-30/secret/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Secret
+    
   </span>
   
 
@@ -1957,8 +1153,10 @@
       <a href="../../../plus/cdk8s-plus-30/service-account/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     ServiceAccount
+    
   </span>
   
 
@@ -1978,8 +1176,10 @@
       <a href="../../../plus/cdk8s-plus-30/service/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Service
+    
   </span>
   
 
@@ -1999,8 +1199,956 @@
       <a href="../../../plus/cdk8s-plus-30/volume/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Volume
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    cdk8s-plus-31
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            cdk8s-plus-31
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-31/config-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ConfigMap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-31/container/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Container
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-31/cronjob/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CronJob
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-31/deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Deployment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-31/horizontal-pod-autoscaler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HorizontalPodAutoscaler
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-31/ingress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ingress
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-31/job/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Job
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-31/namespace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Namespace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-31/network-policy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Network Policy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-31/pod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pod
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-31/pv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PersistentVolume
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-31/pvc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PersistentVolumeClaim
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-31/rbac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Role Based Access Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-31/secret/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Secret
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-31/service-account/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ServiceAccount
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-31/service/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Service
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-31/volume/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Volume
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    cdk8s-plus-32
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            cdk8s-plus-32
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-32/config-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ConfigMap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-32/container/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Container
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-32/cronjob/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CronJob
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-32/deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Deployment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-32/horizontal-pod-autoscaler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HorizontalPodAutoscaler
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-32/ingress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ingress
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-32/job/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Job
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-32/namespace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Namespace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-32/network-policy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Network Policy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-32/pod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pod
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-32/pv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PersistentVolume
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-32/pvc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PersistentVolumeClaim
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-32/rbac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Role Based Access Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-32/secret/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Secret
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-32/service-account/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ServiceAccount
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-32/service/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Service
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plus/cdk8s-plus-32/volume/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Volume
+    
   </span>
   
 
@@ -2049,6 +2197,7 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
@@ -2056,13 +2205,14 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../../../cli/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
     CLI
+    
   </span>
   
 
@@ -2094,8 +2244,10 @@
       <a href="../../../cli/installation/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Install the cdk8s CLI
+    
   </span>
   
 
@@ -2115,8 +2267,10 @@
       <a href="../../../cli/init/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     init
+    
   </span>
   
 
@@ -2136,8 +2290,10 @@
       <a href="../../../cli/import/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     import
+    
   </span>
   
 
@@ -2157,8 +2313,10 @@
       <a href="../../../cli/synth/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     synth
+    
   </span>
   
 
@@ -2201,6 +2359,7 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
@@ -2208,13 +2367,14 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../../" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
     API Reference
+    
   </span>
   
 
@@ -2256,6 +2416,7 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
@@ -2266,8 +2427,10 @@
           <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     cdk8s
+    
   </span>
   
 
@@ -2291,8 +2454,10 @@
       <a href="../../cdk8s/typescript/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     TypeScript
+    
   </span>
   
 
@@ -2312,8 +2477,10 @@
       <a href="../../cdk8s/python/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Python
+    
   </span>
   
 
@@ -2333,8 +2500,10 @@
       <a href="../../cdk8s/java/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Java
+    
   </span>
   
 
@@ -2354,282 +2523,10 @@
       <a href="../../cdk8s/go/" class="md-nav__link">
         
   
-  <span class="md-ellipsis">
-    Go
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    cdk8s-plus-28
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_3">
-            <span class="md-nav__icon md-icon"></span>
-            cdk8s-plus-28
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../cdk8s-plus-28/typescript/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    TypeScript
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../cdk8s-plus-28/python/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Python
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../cdk8s-plus-28/java/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Java
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../cdk8s-plus-28/go/" class="md-nav__link">
-        
   
   <span class="md-ellipsis">
     Go
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    cdk8s-plus-29
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_4">
-            <span class="md-nav__icon md-icon"></span>
-            cdk8s-plus-29
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../cdk8s-plus-29/typescript/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    TypeScript
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../cdk8s-plus-29/python/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Python
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../cdk8s-plus-29/java/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Java
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../cdk8s-plus-29/go/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Go
   </span>
   
 
@@ -2666,6 +2563,7 @@
       
         
       
+    
     
     
     
@@ -2673,22 +2571,24 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
             
+  
   
   <span class="md-ellipsis">
     cdk8s-plus-30
+    
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6_3">
             <span class="md-nav__icon md-icon"></span>
             cdk8s-plus-30
           </label>
@@ -2713,8 +2613,10 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
     TypeScript
+    
   </span>
   
 
@@ -2724,8 +2626,10 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
     TypeScript
+    
   </span>
   
 
@@ -3977,6 +3881,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#seccompprofile" class="md-nav__link">
+    <span class="md-ellipsis">
+      SeccompProfile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#secretprops" class="md-nav__link">
     <span class="md-ellipsis">
       SecretProps
@@ -4859,6 +4772,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#seccompprofiletype" class="md-nav__link">
+    <span class="md-ellipsis">
+      SeccompProfileType
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#servicetype" class="md-nav__link">
     <span class="md-ellipsis">
       ServiceType
@@ -4900,8 +4822,10 @@
       <a href="../python/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Python
+    
   </span>
   
 
@@ -4921,8 +4845,10 @@
       <a href="../java/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Java
+    
   </span>
   
 
@@ -4942,8 +4868,306 @@
       <a href="../go/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Go
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    cdk8s-plus-31
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            cdk8s-plus-31
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cdk8s-plus-31/typescript/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeScript
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cdk8s-plus-31/python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cdk8s-plus-31/java/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cdk8s-plus-31/go/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Go
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    cdk8s-plus-32
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            cdk8s-plus-32
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cdk8s-plus-32/typescript/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeScript
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cdk8s-plus-32/python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cdk8s-plus-32/java/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cdk8s-plus-32/go/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Go
+    
   </span>
   
 
@@ -4984,6 +5208,7 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
@@ -4991,13 +5216,14 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../../../examples/" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
     Examples
+    
   </span>
   
 
@@ -5031,8 +5257,10 @@
       <a href="../../../ecosystem-interoperability/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Ecosystem Interoperability
+    
   </span>
   
 
@@ -5051,8 +5279,10 @@
       <a href="../../../migrating-from-1.x/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Migrating from 1.x
+    
   </span>
   
 
@@ -5083,6 +5313,7 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
@@ -5093,8 +5324,10 @@
           <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Support
+    
   </span>
   
 
@@ -5118,8 +5351,10 @@
       <a href="https://github.com/cdk8s-team/cdk8s/issues/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Issues
+    
   </span>
   
 
@@ -5139,8 +5374,10 @@
       <a href="https://github.com/cdk8s-team/cdk8s/issues/new/choose" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Report a new issue
+    
   </span>
   
 
@@ -5160,8 +5397,10 @@
       <a href="https://stackoverflow.com/questions/tagged/cdk8s" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Stack overflow
+    
   </span>
   
 
@@ -5181,8 +5420,10 @@
       <a href="https://cdk.dev" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Slack
+    
   </span>
   
 
@@ -5202,8 +5443,10 @@
       <a href="https://groups.google.com/forum/#!forum/cdk8s" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Mailing list
+    
   </span>
   
 
@@ -5230,8 +5473,10 @@
       <a href="../../../CHANGELOG/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Changelog
+    
   </span>
   
 
@@ -5250,8 +5495,10 @@
       <a href="../../../ROADMAP/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Roadmap
+    
   </span>
   
 
@@ -5270,8 +5517,10 @@
       <a href="../../../CONTRIBUTING/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Contribution guide
+    
   </span>
   
 
@@ -5290,8 +5539,10 @@
       <a href="../../../media/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Media
+    
   </span>
   
 
@@ -6557,6 +6808,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#seccompprofile" class="md-nav__link">
+    <span class="md-ellipsis">
+      SeccompProfile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#secretprops" class="md-nav__link">
     <span class="md-ellipsis">
       SecretProps
@@ -7439,6 +7699,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#seccompprofiletype" class="md-nav__link">
+    <span class="md-ellipsis">
+      SeccompProfileType
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#servicetype" class="md-nav__link">
     <span class="md-ellipsis">
       ServiceType
@@ -7474,6 +7743,7 @@
               <article class="md-content__inner md-typeset">
                 
                   
+
 
   
   
@@ -7608,6 +7878,13 @@
 <li><em>Type:</em> <a href="#cdk8s-plus-30.PodSecurityContext"><code>cdk8s-plus-30.PodSecurityContext</code></a></li>
 </ul>
 <hr />
+<h5 id="shareprocessnamespacerequired"><code>shareProcessNamespace</code><sup>Required</sup> <a name="cdk8s-plus-30.AbstractPod.property.shareProcessNamespace"></a><a class="headerlink" href="#shareprocessnamespacerequired" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">shareProcessNamespace</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
+</ul>
+<hr />
 <h5 id="volumesrequired"><code>volumes</code><sup>Required</sup> <a name="cdk8s-plus-30.AbstractPod.property.volumes"></a><a class="headerlink" href="#volumesrequired" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">volumes</span><span class="o">:</span><span class="w"> </span><span class="kt">Volume</span><span class="p">[];</span>
 </code></pre></div>
@@ -7620,6 +7897,13 @@
 </code></pre></div>
 <ul>
 <li><em>Type:</em> <a href="#cdk8s-plus-30.ISecret"><code>cdk8s-plus-30.ISecret</code></a></li>
+</ul>
+<hr />
+<h5 id="enableservicelinksoptional"><code>enableServiceLinks</code><sup>Optional</sup> <a name="cdk8s-plus-30.AbstractPod.property.enableServiceLinks"></a><a class="headerlink" href="#enableservicelinksoptional" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">enableServiceLinks</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
 </ul>
 <hr />
 <h5 id="hostnetworkoptional"><code>hostNetwork</code><sup>Optional</sup> <a name="cdk8s-plus-30.AbstractPod.property.hostNetwork"></a><a class="headerlink" href="#hostnetworkoptional" title="Permanent link">&para;</a></h5>
@@ -8369,12 +8653,12 @@ existing Deployments and adopt all their resources with new Deployments.</p>
 <p>The following are typical use cases for Deployments:</p>
 <ul>
 <li>Create a Deployment to rollout a ReplicaSet. The ReplicaSet creates Pods in the background.
-   Check the status of the rollout to see if it succeeds or not.</li>
+  Check the status of the rollout to see if it succeeds or not.</li>
 <li>Declare the new state of the Pods by updating the PodTemplateSpec of the Deployment.
-   A new ReplicaSet is created and the Deployment manages moving the Pods from the old ReplicaSet to the new one at a controlled rate.
-   Each new ReplicaSet updates the revision of the Deployment.</li>
+  A new ReplicaSet is created and the Deployment manages moving the Pods from the old ReplicaSet to the new one at a controlled rate.
+  Each new ReplicaSet updates the revision of the Deployment.</li>
 <li>Rollback to an earlier Deployment revision if the current state of the Deployment is not stable.
-   Each rollback updates the revision of the Deployment.</li>
+  Each rollback updates the revision of the Deployment.</li>
 <li>Scale up the Deployment to facilitate more load.</li>
 <li>Pause the Deployment to apply multiple fixes to its PodTemplateSpec and then resume it to start a new rollout.</li>
 <li>Use the status of the Deployment as an indicator that a rollout has stuck.</li>
@@ -8624,8 +8908,8 @@ when they are no longer needed.</p>
 <li>When Memory usage is above 70%, scale up the number of replicas to meet the demand.</li>
 <li>When CPU usage is below 30%, scale down the number of replicas to save resources.</li>
 <li>When a service is experiencing a spike in traffic, scale up the number of replicas
-   to meet the demand. Then, when the traffic subsides, scale down the number of
-   replicas to save resources.</li>
+  to meet the demand. Then, when the traffic subsides, scale down the number of
+  replicas to save resources.</li>
 </ul>
 <p>The autoscaler uses the following algorithm to determine the number of replicas to scale:</p>
 <p><code>desiredReplicas = ceil[currentReplicas * ( currentMetricValue / desiredMetricValue )]</code></p>
@@ -9042,15 +9326,15 @@ not for cluster-wide objects (e.g. StorageClass, Nodes, PersistentVolumes, etc).
 <h3 id="networkpolicy">NetworkPolicy <a name="cdk8s-plus-30.NetworkPolicy"></a><a class="headerlink" href="#networkpolicy" title="Permanent link">&para;</a></h3>
 <p>Control traffic flow at the IP address or port level (OSI layer 3 or 4), network policies are an application-centric construct which allow you to specify how a pod is allowed to communicate with various network peers.</p>
 <p>Outgoing traffic is allowed if there are no network policies selecting
-   the pod (and cluster policy otherwise allows the traffic),
-   OR if the traffic matches at least one egress rule across all of the
-   network policies that select the pod.</p>
+  the pod (and cluster policy otherwise allows the traffic),
+  OR if the traffic matches at least one egress rule across all of the
+  network policies that select the pod.</p>
 <ul>
 <li>Incoming traffic is allowed to a pod if there are no network policies
-   selecting the pod (and cluster policy otherwise allows the traffic),
-   OR if the traffic source is the pod&rsquo;s local node,
-   OR if the traffic matches at least one ingress rule across all of
-   the network policies that select the pod.</li>
+  selecting the pod (and cluster policy otherwise allows the traffic),
+  OR if the traffic source is the pod&rsquo;s local node,
+  OR if the traffic matches at least one ingress rule across all of
+  the network policies that select the pod.</li>
 </ul>
 <p>Network policies do not conflict; they are additive.
 If any policy or policies apply to a given pod for a given
@@ -10967,6 +11251,18 @@ added or removed. There must be at least one container in a Pod.</p>
 </ul>
 <p>A secret containing docker credentials for authenticating to a registry.</p>
 <hr />
+<h5 id="enableservicelinksoptional_1"><code>enableServiceLinks</code><sup>Optional</sup> <a name="cdk8s-plus-30.AbstractPodProps.property.enableServiceLinks"></a><a class="headerlink" href="#enableservicelinksoptional_1" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">enableServiceLinks</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
+<li><em>Default:</em> true</li>
+</ul>
+<p>Indicates whether information about services should be injected into pod&rsquo;s environment variables, matching the syntax of Docker links.</p>
+<blockquote>
+<p>https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/#accessing-the-service</p>
+</blockquote>
+<hr />
 <h5 id="hostaliasesoptional"><code>hostAliases</code><sup>Optional</sup> <a name="cdk8s-plus-30.AbstractPodProps.property.hostAliases"></a><a class="headerlink" href="#hostaliasesoptional" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">hostAliases</span><span class="o">:</span><span class="w"> </span><span class="kt">HostAlias</span><span class="p">[];</span>
 </code></pre></div>
@@ -11053,6 +11349,18 @@ apiserver. When they do, they are authenticated as a particular Service
 Account (for example, default).</p>
 <blockquote>
 <p>https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/</p>
+</blockquote>
+<hr />
+<h5 id="shareprocessnamespaceoptional"><code>shareProcessNamespace</code><sup>Optional</sup> <a name="cdk8s-plus-30.AbstractPodProps.property.shareProcessNamespace"></a><a class="headerlink" href="#shareprocessnamespaceoptional" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">shareProcessNamespace</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
+<li><em>Default:</em> false</li>
+</ul>
+<p>When process namespace sharing is enabled, processes in a container are visible to all other containers in the same pod.</p>
+<blockquote>
+<p>https://kubernetes.io/docs/tasks/configure-pod-container/share-process-namespace/</p>
 </blockquote>
 <hr />
 <h5 id="terminationgraceperiodoptional_1"><code>terminationGracePeriod</code><sup>Optional</sup> <a name="cdk8s-plus-30.AbstractPodProps.property.terminationGracePeriod"></a><a class="headerlink" href="#terminationgraceperiodoptional_1" title="Permanent link">&para;</a></h5>
@@ -12531,6 +12839,16 @@ somehow it manages to get access to host file system.</li>
 </ul>
 <p>Whether this container has a read-only root filesystem.</p>
 <hr />
+<h5 id="seccompprofileoptional"><code>seccompProfile</code><sup>Optional</sup> <a name="cdk8s-plus-30.ContainerSecurityContextProps.property.seccompProfile"></a><a class="headerlink" href="#seccompprofileoptional" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">seccompProfile</span><span class="o">:</span><span class="w"> </span><span class="kt">SeccompProfile</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <a href="#cdk8s-plus-30.SeccompProfile"><code>cdk8s-plus-30.SeccompProfile</code></a></li>
+<li><em>Default:</em> none</li>
+</ul>
+<p>Container&rsquo;s seccomp profile settings.</p>
+<p>Only one profile source may be set</p>
+<hr />
 <h5 id="useroptional"><code>user</code><sup>Optional</sup> <a name="cdk8s-plus-30.ContainerSecurityContextProps.property.user"></a><a class="headerlink" href="#useroptional" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">user</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
 </code></pre></div>
@@ -12646,6 +12964,18 @@ added or removed. There must be at least one container in a Pod.</p>
 </ul>
 <p>A secret containing docker credentials for authenticating to a registry.</p>
 <hr />
+<h5 id="enableservicelinksoptional_2"><code>enableServiceLinks</code><sup>Optional</sup> <a name="cdk8s-plus-30.CronJobProps.property.enableServiceLinks"></a><a class="headerlink" href="#enableservicelinksoptional_2" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">enableServiceLinks</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
+<li><em>Default:</em> true</li>
+</ul>
+<p>Indicates whether information about services should be injected into pod&rsquo;s environment variables, matching the syntax of Docker links.</p>
+<blockquote>
+<p>https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/#accessing-the-service</p>
+</blockquote>
+<hr />
 <h5 id="hostaliasesoptional_1"><code>hostAliases</code><sup>Optional</sup> <a name="cdk8s-plus-30.CronJobProps.property.hostAliases"></a><a class="headerlink" href="#hostaliasesoptional_1" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">hostAliases</span><span class="o">:</span><span class="w"> </span><span class="kt">HostAlias</span><span class="p">[];</span>
 </code></pre></div>
@@ -12732,6 +13062,18 @@ apiserver. When they do, they are authenticated as a particular Service
 Account (for example, default).</p>
 <blockquote>
 <p>https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/</p>
+</blockquote>
+<hr />
+<h5 id="shareprocessnamespaceoptional_1"><code>shareProcessNamespace</code><sup>Optional</sup> <a name="cdk8s-plus-30.CronJobProps.property.shareProcessNamespace"></a><a class="headerlink" href="#shareprocessnamespaceoptional_1" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">shareProcessNamespace</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
+<li><em>Default:</em> false</li>
+</ul>
+<p>When process namespace sharing is enabled, processes in a container are visible to all other containers in the same pod.</p>
+<blockquote>
+<p>https://kubernetes.io/docs/tasks/configure-pod-container/share-process-namespace/</p>
 </blockquote>
 <hr />
 <h5 id="terminationgraceperiodoptional_2"><code>terminationGracePeriod</code><sup>Optional</sup> <a name="cdk8s-plus-30.CronJobProps.property.terminationGracePeriod"></a><a class="headerlink" href="#terminationgraceperiodoptional_2" title="Permanent link">&para;</a></h5>
@@ -13010,6 +13352,18 @@ added or removed. There must be at least one container in a Pod.</p>
 </ul>
 <p>A secret containing docker credentials for authenticating to a registry.</p>
 <hr />
+<h5 id="enableservicelinksoptional_3"><code>enableServiceLinks</code><sup>Optional</sup> <a name="cdk8s-plus-30.DaemonSetProps.property.enableServiceLinks"></a><a class="headerlink" href="#enableservicelinksoptional_3" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">enableServiceLinks</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
+<li><em>Default:</em> true</li>
+</ul>
+<p>Indicates whether information about services should be injected into pod&rsquo;s environment variables, matching the syntax of Docker links.</p>
+<blockquote>
+<p>https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/#accessing-the-service</p>
+</blockquote>
+<hr />
 <h5 id="hostaliasesoptional_2"><code>hostAliases</code><sup>Optional</sup> <a name="cdk8s-plus-30.DaemonSetProps.property.hostAliases"></a><a class="headerlink" href="#hostaliasesoptional_2" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">hostAliases</span><span class="o">:</span><span class="w"> </span><span class="kt">HostAlias</span><span class="p">[];</span>
 </code></pre></div>
@@ -13096,6 +13450,18 @@ apiserver. When they do, they are authenticated as a particular Service
 Account (for example, default).</p>
 <blockquote>
 <p>https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/</p>
+</blockquote>
+<hr />
+<h5 id="shareprocessnamespaceoptional_2"><code>shareProcessNamespace</code><sup>Optional</sup> <a name="cdk8s-plus-30.DaemonSetProps.property.shareProcessNamespace"></a><a class="headerlink" href="#shareprocessnamespaceoptional_2" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">shareProcessNamespace</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
+<li><em>Default:</em> false</li>
+</ul>
+<p>When process namespace sharing is enabled, processes in a container are visible to all other containers in the same pod.</p>
+<blockquote>
+<p>https://kubernetes.io/docs/tasks/configure-pod-container/share-process-namespace/</p>
 </blockquote>
 <hr />
 <h5 id="terminationgraceperiodoptional_3"><code>terminationGracePeriod</code><sup>Optional</sup> <a name="cdk8s-plus-30.DaemonSetProps.property.terminationGracePeriod"></a><a class="headerlink" href="#terminationgraceperiodoptional_3" title="Permanent link">&para;</a></h5>
@@ -13257,6 +13623,18 @@ added or removed. There must be at least one container in a Pod.</p>
 </ul>
 <p>A secret containing docker credentials for authenticating to a registry.</p>
 <hr />
+<h5 id="enableservicelinksoptional_4"><code>enableServiceLinks</code><sup>Optional</sup> <a name="cdk8s-plus-30.DeploymentProps.property.enableServiceLinks"></a><a class="headerlink" href="#enableservicelinksoptional_4" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">enableServiceLinks</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
+<li><em>Default:</em> true</li>
+</ul>
+<p>Indicates whether information about services should be injected into pod&rsquo;s environment variables, matching the syntax of Docker links.</p>
+<blockquote>
+<p>https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/#accessing-the-service</p>
+</blockquote>
+<hr />
 <h5 id="hostaliasesoptional_3"><code>hostAliases</code><sup>Optional</sup> <a name="cdk8s-plus-30.DeploymentProps.property.hostAliases"></a><a class="headerlink" href="#hostaliasesoptional_3" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">hostAliases</span><span class="o">:</span><span class="w"> </span><span class="kt">HostAlias</span><span class="p">[];</span>
 </code></pre></div>
@@ -13343,6 +13721,18 @@ apiserver. When they do, they are authenticated as a particular Service
 Account (for example, default).</p>
 <blockquote>
 <p>https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/</p>
+</blockquote>
+<hr />
+<h5 id="shareprocessnamespaceoptional_3"><code>shareProcessNamespace</code><sup>Optional</sup> <a name="cdk8s-plus-30.DeploymentProps.property.shareProcessNamespace"></a><a class="headerlink" href="#shareprocessnamespaceoptional_3" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">shareProcessNamespace</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
+<li><em>Default:</em> false</li>
+</ul>
+<p>When process namespace sharing is enabled, processes in a container are visible to all other containers in the same pod.</p>
+<blockquote>
+<p>https://kubernetes.io/docs/tasks/configure-pod-container/share-process-namespace/</p>
 </blockquote>
 <hr />
 <h5 id="terminationgraceperiodoptional_4"><code>terminationGracePeriod</code><sup>Optional</sup> <a name="cdk8s-plus-30.DeploymentProps.property.terminationGracePeriod"></a><a class="headerlink" href="#terminationgraceperiodoptional_4" title="Permanent link">&para;</a></h5>
@@ -14448,6 +14838,18 @@ added or removed. There must be at least one container in a Pod.</p>
 </ul>
 <p>A secret containing docker credentials for authenticating to a registry.</p>
 <hr />
+<h5 id="enableservicelinksoptional_5"><code>enableServiceLinks</code><sup>Optional</sup> <a name="cdk8s-plus-30.JobProps.property.enableServiceLinks"></a><a class="headerlink" href="#enableservicelinksoptional_5" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">enableServiceLinks</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
+<li><em>Default:</em> true</li>
+</ul>
+<p>Indicates whether information about services should be injected into pod&rsquo;s environment variables, matching the syntax of Docker links.</p>
+<blockquote>
+<p>https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/#accessing-the-service</p>
+</blockquote>
+<hr />
 <h5 id="hostaliasesoptional_4"><code>hostAliases</code><sup>Optional</sup> <a name="cdk8s-plus-30.JobProps.property.hostAliases"></a><a class="headerlink" href="#hostaliasesoptional_4" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">hostAliases</span><span class="o">:</span><span class="w"> </span><span class="kt">HostAlias</span><span class="p">[];</span>
 </code></pre></div>
@@ -14534,6 +14936,18 @@ apiserver. When they do, they are authenticated as a particular Service
 Account (for example, default).</p>
 <blockquote>
 <p>https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/</p>
+</blockquote>
+<hr />
+<h5 id="shareprocessnamespaceoptional_4"><code>shareProcessNamespace</code><sup>Optional</sup> <a name="cdk8s-plus-30.JobProps.property.shareProcessNamespace"></a><a class="headerlink" href="#shareprocessnamespaceoptional_4" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">shareProcessNamespace</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
+<li><em>Default:</em> false</li>
+</ul>
+<p>When process namespace sharing is enabled, processes in a container are visible to all other containers in the same pod.</p>
+<blockquote>
+<p>https://kubernetes.io/docs/tasks/configure-pod-container/share-process-namespace/</p>
 </blockquote>
 <hr />
 <h5 id="terminationgraceperiodoptional_5"><code>terminationGracePeriod</code><sup>Optional</sup> <a name="cdk8s-plus-30.JobProps.property.terminationGracePeriod"></a><a class="headerlink" href="#terminationgraceperiodoptional_5" title="Permanent link">&para;</a></h5>
@@ -15582,6 +15996,18 @@ added or removed. There must be at least one container in a Pod.</p>
 </ul>
 <p>A secret containing docker credentials for authenticating to a registry.</p>
 <hr />
+<h5 id="enableservicelinksoptional_6"><code>enableServiceLinks</code><sup>Optional</sup> <a name="cdk8s-plus-30.PodProps.property.enableServiceLinks"></a><a class="headerlink" href="#enableservicelinksoptional_6" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">enableServiceLinks</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
+<li><em>Default:</em> true</li>
+</ul>
+<p>Indicates whether information about services should be injected into pod&rsquo;s environment variables, matching the syntax of Docker links.</p>
+<blockquote>
+<p>https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/#accessing-the-service</p>
+</blockquote>
+<hr />
 <h5 id="hostaliasesoptional_5"><code>hostAliases</code><sup>Optional</sup> <a name="cdk8s-plus-30.PodProps.property.hostAliases"></a><a class="headerlink" href="#hostaliasesoptional_5" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">hostAliases</span><span class="o">:</span><span class="w"> </span><span class="kt">HostAlias</span><span class="p">[];</span>
 </code></pre></div>
@@ -15668,6 +16094,18 @@ apiserver. When they do, they are authenticated as a particular Service
 Account (for example, default).</p>
 <blockquote>
 <p>https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/</p>
+</blockquote>
+<hr />
+<h5 id="shareprocessnamespaceoptional_5"><code>shareProcessNamespace</code><sup>Optional</sup> <a name="cdk8s-plus-30.PodProps.property.shareProcessNamespace"></a><a class="headerlink" href="#shareprocessnamespaceoptional_5" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">shareProcessNamespace</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
+<li><em>Default:</em> false</li>
+</ul>
+<p>When process namespace sharing is enabled, processes in a container are visible to all other containers in the same pod.</p>
+<blockquote>
+<p>https://kubernetes.io/docs/tasks/configure-pod-container/share-process-namespace/</p>
 </blockquote>
 <hr />
 <h5 id="terminationgraceperiodoptional_6"><code>terminationGracePeriod</code><sup>Optional</sup> <a name="cdk8s-plus-30.PodProps.property.terminationGracePeriod"></a><a class="headerlink" href="#terminationgraceperiodoptional_6" title="Permanent link">&para;</a></h5>
@@ -16162,9 +16600,35 @@ It will have no effect on ephemeral volume types such as: secret, configmaps and
 for validation purposes as Scalable targets should not have a
 fixed number of replicas.</p>
 <hr />
+<h3 id="seccompprofile">SeccompProfile <a name="cdk8s-plus-30.SeccompProfile"></a><a class="headerlink" href="#seccompprofile" title="Permanent link">&para;</a></h3>
+<h4 id="initializer_95">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_95" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">SeccompProfile</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">seccompProfile</span><span class="o">:</span><span class="w"> </span><span class="kt">SeccompProfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<h5 id="typerequired_1"><code>type</code><sup>Required</sup> <a name="cdk8s-plus-30.SeccompProfile.property.type"></a><a class="headerlink" href="#typerequired_1" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="nx">SeccompProfileType</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <a href="#cdk8s-plus-30.SeccompProfileType"><code>cdk8s-plus-30.SeccompProfileType</code></a></li>
+</ul>
+<p>Indicates which kind of seccomp profile will be applied.</p>
+<hr />
+<h5 id="localhostprofileoptional"><code>localhostProfile</code><sup>Optional</sup> <a name="cdk8s-plus-30.SeccompProfile.property.localhostProfile"></a><a class="headerlink" href="#localhostprofileoptional" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">localhostProfile</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>string</code></li>
+<li><em>Default:</em> empty string</li>
+</ul>
+<p>localhostProfile indicates a profile defined in a file on the node should be used.</p>
+<p>The profile must be preconfigured on the node to work. Must be a descending path,
+relative to the kubelet&rsquo;s configured seccomp profile location.
+Must only be set if type is &ldquo;Localhost&rdquo;.</p>
+<hr />
 <h3 id="secretprops">SecretProps <a name="cdk8s-plus-30.SecretProps"></a><a class="headerlink" href="#secretprops" title="Permanent link">&para;</a></h3>
 <p>Options for <code>Secret</code>.</p>
-<h4 id="initializer_95">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_95" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_96">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_96" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">SecretProps</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">secretProps</span><span class="o">:</span><span class="w"> </span><span class="kt">SecretProps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -16212,7 +16676,7 @@ handling of secret data by various controllers.</p>
 <hr />
 <h3 id="secretvalue">SecretValue <a name="cdk8s-plus-30.SecretValue"></a><a class="headerlink" href="#secretvalue" title="Permanent link">&para;</a></h3>
 <p>Represents a specific value in JSON secret.</p>
-<h4 id="initializer_96">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_96" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_97">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_97" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">SecretValue</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">secretValue</span><span class="o">:</span><span class="w"> </span><span class="kt">SecretValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -16235,7 +16699,7 @@ handling of secret data by various controllers.</p>
 <hr />
 <h3 id="secretvolumeoptions">SecretVolumeOptions <a name="cdk8s-plus-30.SecretVolumeOptions"></a><a class="headerlink" href="#secretvolumeoptions" title="Permanent link">&para;</a></h3>
 <p>Options for the Secret-based volume.</p>
-<h4 id="initializer_97">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_97" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_98">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_98" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">SecretVolumeOptions</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">secretVolumeOptions</span><span class="o">:</span><span class="w"> </span><span class="kt">SecretVolumeOptions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -16289,7 +16753,7 @@ contain the &lsquo;..&rsquo; path or start with &lsquo;..&rsquo;.</p>
 <hr />
 <h3 id="serviceaccountprops">ServiceAccountProps <a name="cdk8s-plus-30.ServiceAccountProps"></a><a class="headerlink" href="#serviceaccountprops" title="Permanent link">&para;</a></h3>
 <p>Properties for initialization of <code>ServiceAccount</code>.</p>
-<h4 id="initializer_98">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_98" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_99">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_99" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ServiceAccountProps</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">serviceAccountProps</span><span class="o">:</span><span class="w"> </span><span class="kt">ServiceAccountProps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -16328,7 +16792,7 @@ contain the &lsquo;..&rsquo; path or start with &lsquo;..&rsquo;.</p>
 <hr />
 <h3 id="serviceaccounttokensecretprops">ServiceAccountTokenSecretProps <a name="cdk8s-plus-30.ServiceAccountTokenSecretProps"></a><a class="headerlink" href="#serviceaccounttokensecretprops" title="Permanent link">&para;</a></h3>
 <p>Options for <code>ServiceAccountTokenSecret</code>.</p>
-<h4 id="initializer_99">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_99" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_100">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_100" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ServiceAccountTokenSecretProps</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">serviceAccountTokenSecretProps</span><span class="o">:</span><span class="w"> </span><span class="kt">ServiceAccountTokenSecretProps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -16361,7 +16825,7 @@ contain the &lsquo;..&rsquo; path or start with &lsquo;..&rsquo;.</p>
 <hr />
 <h3 id="servicebindoptions">ServiceBindOptions <a name="cdk8s-plus-30.ServiceBindOptions"></a><a class="headerlink" href="#servicebindoptions" title="Permanent link">&para;</a></h3>
 <p>Options for <code>Service.bind</code>.</p>
-<h4 id="initializer_100">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_100" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_101">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_101" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ServiceBindOptions</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">serviceBindOptions</span><span class="o">:</span><span class="w"> </span><span class="kt">ServiceBindOptions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -16415,7 +16879,7 @@ requires one.</p>
 <hr />
 <h3 id="serviceingressbackendoptions">ServiceIngressBackendOptions <a name="cdk8s-plus-30.ServiceIngressBackendOptions"></a><a class="headerlink" href="#serviceingressbackendoptions" title="Permanent link">&para;</a></h3>
 <p>Options for setting up backends for ingress rules.</p>
-<h4 id="initializer_101">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_101" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_102">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_102" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ServiceIngressBackendOptions</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">serviceIngressBackendOptions</span><span class="o">:</span><span class="w"> </span><span class="kt">ServiceIngressBackendOptions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -16431,11 +16895,11 @@ requires one.</p>
 <p>This option will fail if the service does not expose any ports.
 - If the service exposes multiple ports, this option must be specified.
 - If the service exposes a single port, this option is optional and if
-   specified, it must be the same port exposed by the service.</p>
+  specified, it must be the same port exposed by the service.</p>
 <hr />
 <h3 id="serviceport">ServicePort <a name="cdk8s-plus-30.ServicePort"></a><a class="headerlink" href="#serviceport" title="Permanent link">&para;</a></h3>
 <p>Definition of a service port.</p>
-<h4 id="initializer_102">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_102" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_103">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_103" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ServicePort</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">servicePort</span><span class="o">:</span><span class="w"> </span><span class="kt">ServicePort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -16497,7 +16961,7 @@ requires one.</p>
 <hr />
 <h3 id="serviceprops">ServiceProps <a name="cdk8s-plus-30.ServiceProps"></a><a class="headerlink" href="#serviceprops" title="Permanent link">&para;</a></h3>
 <p>Properties for <code>Service</code>.</p>
-<h4 id="initializer_103">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_103" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_104">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_104" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ServiceProps</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">serviceProps</span><span class="o">:</span><span class="w"> </span><span class="kt">ServiceProps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -16571,6 +17035,16 @@ Kubernetes system.</p>
 its ports will are automatically extracted and used as the default value.
 Otherwise, no ports are bound.</p>
 <hr />
+<h5 id="publishnotreadyaddressesoptional"><code>publishNotReadyAddresses</code><sup>Optional</sup> <a name="cdk8s-plus-30.ServiceProps.property.publishNotReadyAddresses"></a><a class="headerlink" href="#publishnotreadyaddressesoptional" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">publishNotReadyAddresses</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
+<li><em>Default:</em> false</li>
+</ul>
+<p>The publishNotReadyAddresses indicates that any agent which deals with endpoints for this Service should disregard any indications of ready/not-ready.</p>
+<p>More info: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.30/#servicespec-v1-core</p>
+<hr />
 <h5 id="selectoroptional_1"><code>selector</code><sup>Optional</sup> <a name="cdk8s-plus-30.ServiceProps.property.selector"></a><a class="headerlink" href="#selectoroptional_1" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="kt">IPodSelector</span><span class="p">;</span>
 </code></pre></div>
@@ -16598,7 +17072,7 @@ its endpoints, which Kubernetes will not modify.</li>
 <hr />
 <h3 id="sshauthsecretprops">SshAuthSecretProps <a name="cdk8s-plus-30.SshAuthSecretProps"></a><a class="headerlink" href="#sshauthsecretprops" title="Permanent link">&para;</a></h3>
 <p>Options for <code>SshAuthSecret</code>.</p>
-<h4 id="initializer_104">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_104" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_105">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_105" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">SshAuthSecretProps</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">sshAuthSecretProps</span><span class="o">:</span><span class="w"> </span><span class="kt">SshAuthSecretProps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -16631,7 +17105,7 @@ its endpoints, which Kubernetes will not modify.</li>
 <hr />
 <h3 id="statefulsetprops">StatefulSetProps <a name="cdk8s-plus-30.StatefulSetProps"></a><a class="headerlink" href="#statefulsetprops" title="Permanent link">&para;</a></h3>
 <p>Properties for initialization of <code>StatefulSet</code>.</p>
-<h4 id="initializer_105">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_105" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_106">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_106" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">StatefulSetProps</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">statefulSetProps</span><span class="o">:</span><span class="w"> </span><span class="kt">StatefulSetProps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -16689,6 +17163,18 @@ added or removed. There must be at least one container in a Pod.</p>
 <li><em>Default:</em> No auth. Images are assumed to be publicly available.</li>
 </ul>
 <p>A secret containing docker credentials for authenticating to a registry.</p>
+<hr />
+<h5 id="enableservicelinksoptional_7"><code>enableServiceLinks</code><sup>Optional</sup> <a name="cdk8s-plus-30.StatefulSetProps.property.enableServiceLinks"></a><a class="headerlink" href="#enableservicelinksoptional_7" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">enableServiceLinks</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
+<li><em>Default:</em> true</li>
+</ul>
+<p>Indicates whether information about services should be injected into pod&rsquo;s environment variables, matching the syntax of Docker links.</p>
+<blockquote>
+<p>https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/#accessing-the-service</p>
+</blockquote>
 <hr />
 <h5 id="hostaliasesoptional_6"><code>hostAliases</code><sup>Optional</sup> <a name="cdk8s-plus-30.StatefulSetProps.property.hostAliases"></a><a class="headerlink" href="#hostaliasesoptional_6" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">hostAliases</span><span class="o">:</span><span class="w"> </span><span class="kt">HostAlias</span><span class="p">[];</span>
@@ -16776,6 +17262,18 @@ apiserver. When they do, they are authenticated as a particular Service
 Account (for example, default).</p>
 <blockquote>
 <p>https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/</p>
+</blockquote>
+<hr />
+<h5 id="shareprocessnamespaceoptional_6"><code>shareProcessNamespace</code><sup>Optional</sup> <a name="cdk8s-plus-30.StatefulSetProps.property.shareProcessNamespace"></a><a class="headerlink" href="#shareprocessnamespaceoptional_6" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">shareProcessNamespace</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
+<li><em>Default:</em> false</li>
+</ul>
+<p>When process namespace sharing is enabled, processes in a container are visible to all other containers in the same pod.</p>
+<blockquote>
+<p>https://kubernetes.io/docs/tasks/configure-pod-container/share-process-namespace/</p>
 </blockquote>
 <hr />
 <h5 id="terminationgraceperiodoptional_7"><code>terminationGracePeriod</code><sup>Optional</sup> <a name="cdk8s-plus-30.StatefulSetProps.property.terminationGracePeriod"></a><a class="headerlink" href="#terminationgraceperiodoptional_7" title="Permanent link">&para;</a></h5>
@@ -16883,7 +17381,7 @@ its pod template.</p>
 <hr />
 <h3 id="statefulsetupdatestrategyrollingupdateoptions">StatefulSetUpdateStrategyRollingUpdateOptions <a name="cdk8s-plus-30.StatefulSetUpdateStrategyRollingUpdateOptions"></a><a class="headerlink" href="#statefulsetupdatestrategyrollingupdateoptions" title="Permanent link">&para;</a></h3>
 <p>Options for <code>StatefulSetUpdateStrategy.rollingUpdate</code>.</p>
-<h4 id="initializer_106">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_106" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_107">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_107" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">StatefulSetUpdateStrategyRollingUpdateOptions</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">statefulSetUpdateStrategyRollingUpdateOptions</span><span class="o">:</span><span class="w"> </span><span class="kt">StatefulSetUpdateStrategyRollingUpdateOptions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -16907,7 +17405,7 @@ update, roll out a canary, or perform a phased roll out.</p>
 <p>Subject contains a reference to the object or user identities a role binding applies to.</p>
 <p>This can either hold a direct API object reference, or a value
 for non-objects such as user and group names.</p>
-<h4 id="initializer_107">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_107" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_108">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_108" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">SubjectConfiguration</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">subjectConfiguration</span><span class="o">:</span><span class="w"> </span><span class="kt">SubjectConfiguration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -16955,7 +17453,7 @@ should report an error.</p>
 <hr />
 <h3 id="sysctl">Sysctl <a name="cdk8s-plus-30.Sysctl"></a><a class="headerlink" href="#sysctl" title="Permanent link">&para;</a></h3>
 <p>Sysctl defines a kernel parameter to be set.</p>
-<h4 id="initializer_108">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_108" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_109">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_109" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Sysctl</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">sysctl</span><span class="o">:</span><span class="w"> </span><span class="kt">Sysctl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -16978,7 +17476,7 @@ should report an error.</p>
 <hr />
 <h3 id="tcpsocketprobeoptions">TcpSocketProbeOptions <a name="cdk8s-plus-30.TcpSocketProbeOptions"></a><a class="headerlink" href="#tcpsocketprobeoptions" title="Permanent link">&para;</a></h3>
 <p>Options for <code>Probe.fromTcpSocket()</code>.</p>
-<h4 id="initializer_109">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_109" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_110">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_110" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">TcpSocketProbeOptions</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">tcpSocketProbeOptions</span><span class="o">:</span><span class="w"> </span><span class="kt">TcpSocketProbeOptions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -17058,7 +17556,7 @@ should report an error.</p>
 <hr />
 <h3 id="tlssecretprops">TlsSecretProps <a name="cdk8s-plus-30.TlsSecretProps"></a><a class="headerlink" href="#tlssecretprops" title="Permanent link">&para;</a></h3>
 <p>Options for <code>TlsSecret</code>.</p>
-<h4 id="initializer_110">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_110" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_111">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_111" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">TlsSecretProps</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">tlsSecretProps</span><span class="o">:</span><span class="w"> </span><span class="kt">TlsSecretProps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -17099,7 +17597,7 @@ should report an error.</p>
 <hr />
 <h3 id="volumemount">VolumeMount <a name="cdk8s-plus-30.VolumeMount"></a><a class="headerlink" href="#volumemount" title="Permanent link">&para;</a></h3>
 <p>Mount a volume from the pod to the container.</p>
-<h4 id="initializer_111">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_111" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_112">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_112" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">VolumeMount</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">volumeMount</span><span class="o">:</span><span class="w"> </span><span class="kt">VolumeMount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -17168,7 +17666,7 @@ contain &lsquo;:&rsquo;.</p>
 <hr />
 <h3 id="workloadprops">WorkloadProps <a name="cdk8s-plus-30.WorkloadProps"></a><a class="headerlink" href="#workloadprops" title="Permanent link">&para;</a></h3>
 <p>Properties for <code>Workload</code>.</p>
-<h4 id="initializer_112">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_112" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_113">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_113" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">WorkloadProps</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">workloadProps</span><span class="o">:</span><span class="w"> </span><span class="kt">WorkloadProps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -17226,6 +17724,18 @@ added or removed. There must be at least one container in a Pod.</p>
 <li><em>Default:</em> No auth. Images are assumed to be publicly available.</li>
 </ul>
 <p>A secret containing docker credentials for authenticating to a registry.</p>
+<hr />
+<h5 id="enableservicelinksoptional_8"><code>enableServiceLinks</code><sup>Optional</sup> <a name="cdk8s-plus-30.WorkloadProps.property.enableServiceLinks"></a><a class="headerlink" href="#enableservicelinksoptional_8" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">enableServiceLinks</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
+<li><em>Default:</em> true</li>
+</ul>
+<p>Indicates whether information about services should be injected into pod&rsquo;s environment variables, matching the syntax of Docker links.</p>
+<blockquote>
+<p>https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/#accessing-the-service</p>
+</blockquote>
 <hr />
 <h5 id="hostaliasesoptional_7"><code>hostAliases</code><sup>Optional</sup> <a name="cdk8s-plus-30.WorkloadProps.property.hostAliases"></a><a class="headerlink" href="#hostaliasesoptional_7" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">hostAliases</span><span class="o">:</span><span class="w"> </span><span class="kt">HostAlias</span><span class="p">[];</span>
@@ -17315,6 +17825,18 @@ Account (for example, default).</p>
 <p>https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/</p>
 </blockquote>
 <hr />
+<h5 id="shareprocessnamespaceoptional_7"><code>shareProcessNamespace</code><sup>Optional</sup> <a name="cdk8s-plus-30.WorkloadProps.property.shareProcessNamespace"></a><a class="headerlink" href="#shareprocessnamespaceoptional_7" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">shareProcessNamespace</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <code>boolean</code></li>
+<li><em>Default:</em> false</li>
+</ul>
+<p>When process namespace sharing is enabled, processes in a container are visible to all other containers in the same pod.</p>
+<blockquote>
+<p>https://kubernetes.io/docs/tasks/configure-pod-container/share-process-namespace/</p>
+</blockquote>
+<hr />
 <h5 id="terminationgraceperiodoptional_8"><code>terminationGracePeriod</code><sup>Optional</sup> <a name="cdk8s-plus-30.WorkloadProps.property.terminationGracePeriod"></a><a class="headerlink" href="#terminationgraceperiodoptional_8" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">terminationGracePeriod</span><span class="o">:</span><span class="w"> </span><span class="kt">Duration</span><span class="p">;</span>
 </code></pre></div>
@@ -17370,7 +17892,7 @@ its pod template.</p>
 <hr />
 <h3 id="workloadschedulingspreadoptions">WorkloadSchedulingSpreadOptions <a name="cdk8s-plus-30.WorkloadSchedulingSpreadOptions"></a><a class="headerlink" href="#workloadschedulingspreadoptions" title="Permanent link">&para;</a></h3>
 <p>Options for <code>WorkloadScheduling.spread</code>.</p>
-<h4 id="initializer_113">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_113" title="Permanent link">&para;</a></h4>
+<h4 id="initializer_114">Initializer <a name="[object Object].Initializer"></a><a class="headerlink" href="#initializer_114" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">WorkloadSchedulingSpreadOptions</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;cdk8s-plus-30&#39;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">workloadSchedulingSpreadOptions</span><span class="o">:</span><span class="w"> </span><span class="kt">WorkloadSchedulingSpreadOptions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
@@ -17979,6 +18501,13 @@ port configuration is stored in the <code>ports</code> field.</p>
 <li><em>Type:</em> <code>number</code></li>
 </ul>
 <hr />
+<h5 id="seccompprofileoptional_1"><code>seccompProfile</code><sup>Optional</sup> <a name="cdk8s-plus-30.ContainerSecurityContext.property.seccompProfile"></a><a class="headerlink" href="#seccompprofileoptional_1" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">seccompProfile</span><span class="o">:</span><span class="w"> </span><span class="kt">SeccompProfile</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><em>Type:</em> <a href="#cdk8s-plus-30.SeccompProfile"><code>cdk8s-plus-30.SeccompProfile</code></a></li>
+</ul>
+<hr />
 <h5 id="useroptional_2"><code>user</code><sup>Optional</sup> <a name="cdk8s-plus-30.ContainerSecurityContext.property.user"></a><a class="headerlink" href="#useroptional_2" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">user</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
 </code></pre></div>
@@ -18559,7 +19088,7 @@ port configuration is stored in the <code>ports</code> field.</p>
 </ul>
 <hr />
 <h4 id="properties_38">Properties <a name="Properties"></a><a class="headerlink" href="#properties_38" title="Permanent link">&para;</a></h4>
-<h5 id="typerequired_1"><code>type</code><sup>Required</sup> <a name="cdk8s-plus-30.Metric.property.type"></a><a class="headerlink" href="#typerequired_1" title="Permanent link">&para;</a></h5>
+<h5 id="typerequired_2"><code>type</code><sup>Required</sup> <a name="cdk8s-plus-30.Metric.property.type"></a><a class="headerlink" href="#typerequired_2" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 </code></pre></div>
 <ul>
@@ -20599,7 +21128,7 @@ because the previous claimant&rsquo;s data remains on the volume.
 An administrator can manually reclaim the volume with the following steps:</p>
 <ol>
 <li>Delete the PersistentVolume. The associated storage asset in external
-    infrastructure (such as an AWS EBS, GCE PD, Azure Disk, or Cinder volume) still exists after the PV is deleted.</li>
+   infrastructure (such as an AWS EBS, GCE PD, Azure Disk, or Cinder volume) still exists after the PV is deleted.</li>
 <li>Manually clean up the data on the associated storage asset accordingly.</li>
 <li>Manually delete the associated storage asset.</li>
 </ol>
@@ -20685,6 +21214,16 @@ desired scale without waiting, and on scale down will delete all pods at once.</
 </ul>
 <p>Disables scaling in this direction.</p>
 <hr />
+<h3 id="seccompprofiletype">SeccompProfileType <a name="SeccompProfileType"></a><a class="headerlink" href="#seccompprofiletype" title="Permanent link">&para;</a></h3>
+<h4 id="localhost"><code>LOCALHOST</code> <a name="cdk8s-plus-30.SeccompProfileType.LOCALHOST"></a><a class="headerlink" href="#localhost" title="Permanent link">&para;</a></h4>
+<p>A profile defined in a file on the node should be used.</p>
+<hr />
+<h4 id="runtime_default"><code>RUNTIME_DEFAULT</code> <a name="cdk8s-plus-30.SeccompProfileType.RUNTIME_DEFAULT"></a><a class="headerlink" href="#runtime_default" title="Permanent link">&para;</a></h4>
+<p>The container runtime default profile should be used.</p>
+<hr />
+<h4 id="unconfined"><code>UNCONFINED</code> <a name="cdk8s-plus-30.SeccompProfileType.UNCONFINED"></a><a class="headerlink" href="#unconfined" title="Permanent link">&para;</a></h4>
+<p>No profile should be applied.</p>
+<hr />
 <h3 id="servicetype">ServiceType <a name="ServiceType"></a><a class="headerlink" href="#servicetype" title="Permanent link">&para;</a></h3>
 <p>For some parts of your application (for example, frontends) you may want to expose a Service onto an external IP address, that&rsquo;s outside of your cluster.</p>
 <p>Kubernetes ServiceTypes allow you to specify what kind of Service you want.
@@ -20724,7 +21263,7 @@ are automatically created.</p>
 <p>Pods that do not tolerate the taint are evicted immediately.
 - Pods that tolerate the taint without specifying <code>duration</code> remain bound forever.
 - Pods that tolerate the taint with a specified <code>duration</code> remain bound for
-   the specified amount of time.</p>
+  the specified amount of time.</p>
 <hr />
 
 
@@ -20743,7 +21282,7 @@ are automatically created.</p>
             </div>
           
           
-  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
 
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -20757,7 +21296,7 @@ are automatically created.</p>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      © 2022, Amazon Web Services, Inc. or its affiliates. © cdk8s project authors. All rights reserved.
+      © 2025, Amazon Web Services, Inc. or its affiliates. © cdk8s project authors. All rights reserved.
     </div>
   
   
@@ -20775,7 +21314,7 @@ are automatically created.</p>
     
     
     <a href="https://cdk.dev" target="_blank" rel="noopener" title="Join the cdk8s Slack channel" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1s21.16-47.06 47.06-47.06h47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06S448 171 448 196.9s-21.16 47.06-47.06 47.06h-47.06zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06S309 480 283.1 480s-47.06-21.16-47.06-47.06v-47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06s21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06z"/></svg>
     </a>
   
     
@@ -20783,7 +21322,7 @@ are automatically created.</p>
     
     
     <a href="https://github.com/cdk8s-team/cdk8s" target="_blank" rel="noopener" title="cdk8s on GitHub" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
     
@@ -20791,7 +21330,7 @@ are automatically created.</p>
     
     
     <a href="https://stackoverflow.com/questions/tagged/cdk8s" target="_blank" rel="noopener" title="cdk8s on Stack Overflow" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M290.7 311 95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M290.7 311 95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z"/></svg>
     </a>
   
 </div>
@@ -20806,10 +21345,12 @@ are automatically created.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tracking", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tracking", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
     
   </body>
